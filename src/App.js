@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// import GettingStarted from "./components/1.GettingStarted";
+// import ImperativeAPI from "./components/2.imperativeAPI";
+// import PropsInReactSpring from "./components/3.PropsInReactSpring";
+// import SprintRef from "./components/4.SpringRef";
+// import UseSpringsHook from "./components/5.useSpringsHook";
+import UseTrailHook from "./components/6.UseTrailsHook";
+import { Canvas } from "@react-three/fiber";
+import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      <Canvas>
+      <UseTrailHook></UseTrailHook>
+      </Canvas>
     </div>
   );
 }
